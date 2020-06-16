@@ -7,14 +7,16 @@ import {popularity} from '../services/Popularity'
 export default function PopularityPanel() {
     const [success, setSuccess] = useState(false)
     const [img, setImg] = useState("no image")
-  
+    const [img_priority, setImgP] = useState("no image")
    
   
     async function onSubmit(event) {
     event.preventDefault(); 
      popularity().then((response)=>{
             const image = response.data.data
+            const priority = response.data.priority
             setImg(image)
+            setImgP(priority)
             setSuccess(true)
 
      })
@@ -39,7 +41,9 @@ export default function PopularityPanel() {
 
             {success && 
             <Fragment>
-            <h3>The report</h3>
+            <h3>Top 10 airports</h3>
+            <img src={decoder(priority)}></img>
+            <h3>Airports</h3>
             <img src={decoder(img)}></img>
             </Fragment>}
         </div>
