@@ -42,7 +42,7 @@ export default function PopularityPanel() {
             {success && 
             <Fragment>
             <h3>Top 10 airports</h3>
-            <img src={decoder(img_priority)} width="10" length='10'></img>
+            <img src={decoder(img_priority)} width="400" length='400'></img>
             <h3>Airports</h3>
             <img src={decoder(img)}></img>
             </Fragment>}
