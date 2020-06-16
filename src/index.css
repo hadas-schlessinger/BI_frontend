@@ -1,0 +1,149 @@
+body {
+  margin: 2mm;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+/* div{
+  background-image: url('transperantBackground.png');
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table{
+  margin-left: 2mm;
+  margin-right: 2mm;
+}
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #302798;
+  font-weight: normal;
+  margin-left: 2mm;
+  margin-right: 2mm;
+}
+
+/* Headers */
+
+h1{
+color: rgb(47, 11, 154);
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-family: "OpenSansCondensed", sans-serif;
+  margin-bottom: 1rem;
+}
+
+h2.white {
+  color: white;
+}
+
+h3 {
+  font-size: 13px;
+  line-height: 18px;
+  color: rgb(75, 39, 133);
+  text-transform: uppercase;
+}
+
+h4 {
+  color: rgb(97, 73, 136);
+}
+
+/* Links */
+
+a {
+  /* color: #83cdbb; */
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9698d7;
+}
+
+label{
+margin-left: 2mm;
+margin-right: 2mm;
+font-weight: bold;
+}
+
+/* Buttons */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  border: solid 1px #15171c;
+  background-color: #656d9b;
+  text-transform: capitalize;
+  outline: none;
+}
+
+
+input[type="button"].large,
+input[type="submit"].large,
+input[type="reset"].large {
+  padding: 10px 20px;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #9698d7;
+}
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+  opacity: 0.3;  
+}
+
+/* Input */
+input[type="number"],
+input[type="text"],
+input[type="search"] {
+  margin-left: 2mm;
+  background-color: inherit;
+  border: 0;
+  border: 1px rgb(71, 0, 184) solid; 
+  padding: 8px;
+  font-size: 14px;
+}
+
+input[type="text"]{
+  width: 300px;
+}
+
+
+input[type="text"]::placeholder,
+input[type="search"]::placeholder {
+  color: #9aa7bd;
+  opacity: 1;
+  font-style: italic;
+  opacity: 1;
+  
+}
+
+.error {
+    color: #f02424;
+    position: relative;
+    top: 6px;
+    height: 0;
+}
+
